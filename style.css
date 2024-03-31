@@ -1,0 +1,261 @@
+/* Style Guidelines
+* 
+* - Colors:
+* - hsl(0, 100%, 67%)
+* - hsl(39, 100%, 56%)
+* - hsl(166, 100%, 37%)
+* - hsl(234, 85%, 45%)
+*
+* - Gradients
+* - hsl(252, 100%, 67%)
+* - hsl(241, 81%, 54%)
+*
+* - hsla(256, 72%, 46%, 1)
+* - hsla(241, 72%, 46%, 0)
+*
+* - Neutral
+* - hsl(0, 0%, 100%)
+* - hsl(221, 100%, 96%)
+* - hsl(241, 100%, 89%)
+* - hsl(224, 30%, 27%)
+*
+* Font family:
+*       Hanken Grotesk
+* Font weight:
+*       500, 700, 800
+* Font size:
+*       18px
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ************************************ */
+.main {
+  width: 100%;
+  max-width: 73.7rem;
+  height: 100%;
+  max-height: 52rem;
+  box-shadow: 8px 8px 50px #2e2be910;
+
+  border-radius: 40px;
+  display: flex;
+}
+
+/* ************************************ */
+/* Results Section */
+.result-section {
+  width: 50%;
+  padding-top: 4.8rem;
+  text-align: center;
+  border-radius: 40px;
+  background: linear-gradient(to bottom, #7857ff, #2e2be9);
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.result-heading {
+  color: #ebf1ff;
+  font-size: 2.4rem;
+  margin-bottom: 3.6rem;
+}
+
+.result-box {
+  width: 20rem;
+  height: 20rem;
+  background: linear-gradient(to bottom, #4e21ca 10%, #2421ca00 100%);
+  border-radius: 50%;
+  margin-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.result {
+  font-size: 7.4rem;
+  font-weight: 800;
+}
+
+.result-text {
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+
+.result-message {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.result-description {
+  max-width: 70%;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: hsl(241, 100%, 89%);
+}
+
+/* ************************************ */
+/* Summary Section */
+.summary-section {
+  width: 50%;
+  padding: 4.8rem 4rem;
+  color: #303b5a;
+}
+
+.summary-heading {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 3.2rem;
+}
+
+.details {
+  margin-bottom: 4.8rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.detail {
+  font-size: 1.8rem;
+  padding: 1.6rem 1.6rem;
+  background-color: aqua;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail div {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.detail div span {
+  font-weight: 700;
+}
+
+.detail:nth-of-type(1) {
+  background-color: #ffeeee;
+}
+
+.detail:nth-of-type(1) div span {
+  color: #e64e4e;
+}
+
+.detail:nth-of-type(2) {
+  background-color: #fff7e9;
+}
+
+.detail:nth-of-type(2) div span {
+  color: #ffb01f;
+}
+
+.detail:nth-of-type(3) {
+  background-color: #e6f8f4;
+}
+
+.detail:nth-of-type(3) div span {
+  color: #00bd91;
+}
+
+.detail:nth-of-type(4) {
+  background-color: #e7e9fb;
+}
+
+.detail:nth-of-type(4) div span {
+  color: #1125d4;
+}
+
+.detail-result {
+  font-weight: 800;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.6rem 0;
+  width: 100%;
+  border-radius: 100px;
+  color: #ffffff;
+  background-color: #303b5a;
+  font-family: inherit;
+  border: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover,
+.btn:active {
+  background: linear-gradient(to bottom, #7857ff, #2e2be9);
+}
+
+/* ************************************ */
+/* Attribution */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #3e52a3;
+}
+
+/* ************************************ */
+/* Media queries */
+
+@media (max-width: 47rem) {
+  body {
+    padding: 0 3.2rem;
+  }
+}
+
+@media (max-width: 41rem) {
+  body {
+    display: block;
+    padding: 0;
+  }
+  .main {
+    flex-direction: column;
+    box-shadow: none;
+  }
+
+  .result-section {
+    width: 100%;
+    height: auto;
+    padding: 4.8rem 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .summary-section {
+    width: 100%;
+  }
+}
