@@ -42,8 +42,10 @@ body {
   height: 100vh;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 4.8rem;
 }
 
 ul {
@@ -221,8 +223,10 @@ ul {
 
 /* ************************************ */
 /* Attribution */
+footer {
+  font-size: 1.4rem;
+}
 .attribution {
-  font-size: 11px;
   text-align: center;
 }
 .attribution a {
