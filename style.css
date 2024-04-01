@@ -87,7 +87,7 @@ ul {
 .result-box {
   width: 20rem;
   height: 20rem;
-  background: linear-gradient(to bottom, #4e21ca 10%, #2421ca00 100%);
+  background-image: linear-gradient(to bottom, #4e21ca 10%, #2421ca00 100%);
   border-radius: 50%;
   margin-bottom: 2rem;
 
@@ -108,8 +108,8 @@ ul {
 }
 
 .result-message {
-  margin-bottom: 2rem;
-  font-size: 3rem;
+  margin-bottom: 1.4rem;
+  font-size: 3.2rem;
   font-weight: 600;
 }
 
@@ -210,12 +210,13 @@ ul {
   font-size: 1.6rem;
   font-weight: 700;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: background-image 0.3ms;
 }
 
 .btn:hover,
 .btn:active {
-  background: linear-gradient(to bottom, #7857ff, #2e2be9);
+  background: transparent;
+  background-image: linear-gradient(to bottom, #7857ff, #2e2be9);
 }
 
 /* ************************************ */
